@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkslategrey;
+
+}
+div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #f8f8f8ff;
+}
+li {
+    color: #f8f8f8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #94c5ccff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.exclude-button {
+    background-color: firebrick;
+}

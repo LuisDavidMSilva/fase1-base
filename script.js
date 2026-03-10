@@ -6,6 +6,7 @@ document.getElementById("addTaskButton").addEventListener("click", function () {
         let taskList = document.getElementById("taskList");
         let listItem = document.createElement("li");
         let excludeItem = document.createElement("button");
+        excludeItem.classList.add("exclude-button");
         excludeItem.textContent = "Excluir";
         excludeItem.addEventListener("click", function () {
             taskList.removeChild(listItem);
