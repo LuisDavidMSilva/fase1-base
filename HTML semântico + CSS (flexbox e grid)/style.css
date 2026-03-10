@@ -1,6 +1,10 @@
 body {
     background-color: #1E293E;
     margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column
 }
 
 header {
@@ -51,6 +55,7 @@ footer {
     color: #E2E8F0;
     padding: 20px;
     text-align: center;
+    margin-top: auto;
 }
 
 .social-links {
