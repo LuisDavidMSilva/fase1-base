@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Luis David - Desenvolvedor em transição focado em software, segurança e infraestrutura">
+    <meta name="keywords" content="Luis David, desenvolvedor, portfólio, suporte técnico, tecnologia">
+    <meta name="author" content="Luis David">
+    <meta name="theme-color" content="#000000">
     <title>Página pessoal - HTML Semântico + CSS (Flexbox e Grid)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Minha Página Pessoal</h1>
+        <h1>Luis David</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
@@ -19,51 +27,72 @@
             </ul>
         </nav>
     </header>
-    <section id="sobre">
-        <img src="/fase1-base/static/img/notion-avatar.png" alt="notion-avatar" class="avatar">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Meu nome é Luis David e sou um desenvolvedor.
-            
-            Atualmente sou um analista de suporte técnico, mas estou em transição para a área de desenvolvimento de software, segurança da informação e operações e infraestrutura..</p>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <article>
-            <h3>Projeto 1: Site de Portfólio</h3>
-            <p>Desenvolvi esse site de portfólio para mostrar meus trabalhos e habilidades em desenvolvimento de
-                software...
-            </p>
-            <p> Nesta seção dos site terá o front-end dos dois projetos (que ainda são cli) que desenvolvi: uma calculadora e um jogo da adivinhação em JavaScript. Exemplos simples da minha capacidade.</p>
-            <p>Também tenho esse outro site para mostrar os bastidores do meu homelab, além de manter como documentação
-                para consulta futura.
-                Você pode conferir ele aqui: <a href="https://blog.luishomelab.tec.br" target="_blank"
-                    rel="noopener noreferrer">Homelab</a>.
-                
-            </p>
-            <h3> Projeto 2: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Calculadora.js" target="_blank" rel="noopener noreferrer">Calculadora</a></h3>
-            <p>Desenvolvi uma calculadora simples em JavaScript para praticar minhas habilidades de programação.
-                A calculadora suporta operações básicas como adição, subtração, multiplicação e divisão. O usuário pode
-                inserir os números e a operação desejada com (+, -, *, /).
-            </p>
-            <h3> Projeto 3: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Adivinhacao.js" target="_blank" rel="noopener noreferrer">Jogo da Adivinhação</a></h3>
-            <p>Criei um jogo da adivinhação em JavaScript onde o usuário tem que adivinhar um número gerado aleatoriamente entre 1 e 10.</p>
-            <p>Há um certo número de tentativas para adivinhar o número correto, que são informadas a cada tentativa mal sucedida. Caso as tentativas se esgotem, o jogo termina.</p>
-            <h3> Projeto 4: <a href="https://luisdavidmsilva.github.io/taskboard/" target="_blank" rel="noopener noreferrer">Taskboard</a></h3>
-            <p>Desenvolvi um taskboard simples usando Vite e React para organizar minhas tarefas diárias. O taskboard permite criar, excluir e mover tarefas entre diferentes etapas.</p>
-            <h3> Projeto 5: <a href="https://github.com/LuisDavidMSilva/provr" target="_blank" rel="noopener noreferrer">Provr</a></h3>
-            <p>Ainda em desenvolvimento, uma plataforma de aplicativo de teste baseada na web. Crie contas, faça upload de bancos de perguntas, faça questionários cronometrados por nível de dificuldade e acompanhe seu histórico de desempenho..</p>
-       
-        </article>
-    </section>
+
+    <main>
+        <section id="sobre">
+            <img src="/fase1-base/static/img/notion-avatar.png" alt="Luis David" class="avatar">
+            <div class="sobre-content">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é <strong>Luis David</strong> e sou um desenvolvedor apaixonado por tecnologia.</p>
+                <p>Atualmente sou um analista de suporte técnico, mas estou em transição para a área de desenvolvimento de
+                    software, segurança da informação e operações/infraestrutura.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projects-container">
+                <article class="project-card" id="este-site">
+                    <h3>Projeto 1: Site de Portfólio</h3>
+                    <p>Desenvolvi esse site de portfólio para mostrar meus trabalhos e habilidades em desenvolvimento de
+                        software...
+                    </p>
+                    <p>Nesta seção terá o front-end dos meus projetos CLI (calculadora e jogo) adaptados para a web,
+                        demonstrando minha evolução.</p>
+                    <p> Confira também os bastidores do meu homelab: <a href="https://blog.luishomelab.tec.br" target="_blank"
+                            rel="noopener noreferrer">Homelab</a>.
+                    </p>
+                </article>
+
+                <article class="project-card" id="calculadora">
+                    <h3>Projeto 2: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Calculadora.js"
+                            target="_blank" rel="noopener noreferrer">Calculadora</a></h3>
+                    <p>Desenvolvi uma calculadora simples em JavaScript para praticar lógica de programação.
+                        Suporta operações básicas como adição, subtração, multiplicação e divisão.</p>
+                </article>
+
+                <article class="project-card" id="adivinhacao">
+                    <h3> Projeto 3: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Adivinhacao.js"
+                            target="_blank" rel="noopener noreferrer">Jogo da Adivinhação</a></h3>
+                    <p>Um jogo clássico onde o usuário tenta adivinhar um número entre 1 e 10 com limite de tentativas. Desenvolvido para exercitar condicionais e loops.</p>
+                </article>
+
+                <article class="project-card" id="taskboard">
+                    <h3> Projeto 4: <a href="https://luisdavidmsilva.github.io/taskboard/" target="_blank"
+                            rel="noopener noreferrer">Taskboard</a></h3>
+                    <p>Organizador de tarefas diárias feito com <strong>Vite e React</strong>. Permite criar, gerenciar e mover tarefas entre status.</p>
+                </article>
+
+                <article class="project-card" id="provr">
+                    <h3> Projeto 5: <a href="https://github.com/LuisDavidMSilva/provr" target="_blank"
+                            rel="noopener noreferrer">Provr</a></h3>
+                    <p>Plataforma web de testes (em desenvolvimento). Possibilita a criação de contas, upload de bancos de questões e acompanhamento de desempenho.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <section id="contato">
             <h2>Contato</h2>
-            <p>Você pode me encontrar nas redes sociais ou enviar um email para <a
-                    href="mailto:luisdms@protonmail.com">luis.dms@protonmail.com</a>.</p>
+            <p>Conecte-se comigo através das redes sociais ou por e-mail.</p>
             <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/luisdavidms" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/LuisDavidMSilva" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/luisdavidms" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/LuisDavidMSilva" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
                 <li><a href="https://t.me/LuisDavi_d" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                <li><a href="mailto:luisdms@protonmail.com">Email</a></li>
             </ul>
         </section>
     </footer>
