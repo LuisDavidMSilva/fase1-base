@@ -9,11 +9,12 @@
     <meta name="keywords" content="Luis David, desenvolvedor, portfólio, suporte técnico, tecnologia">
     <meta name="author" content="Luis David">
     <meta name="theme-color" content="#000000">
-    <title>Página pessoal - HTML Semântico + CSS (Flexbox e Grid)</title>
+    <title>Portfólio de Luis David</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -30,11 +31,12 @@
 
     <main>
         <section id="sobre">
-            <img src="/fase1-base/static/img/notion-avatar.png" alt="Luis David" class="avatar">
+            <img src="static/img/notion-avatar.png" alt="Luis David" class="avatar">
             <div class="sobre-content">
                 <h2>Sobre Mim</h2>
                 <p>Olá! Meu nome é <strong>Luis David</strong> e sou um desenvolvedor apaixonado por tecnologia.</p>
-                <p>Atualmente sou um analista de suporte técnico, mas estou em transição para a área de desenvolvimento de
+                <p>Atualmente sou um analista de suporte técnico, mas estou em transição para a área de desenvolvimento
+                    de
                     software, segurança da informação e operações/infraestrutura.</p>
             </div>
         </section>
@@ -47,36 +49,51 @@
                     <p>Desenvolvi esse site de portfólio para mostrar meus trabalhos e habilidades em desenvolvimento de
                         software...
                     </p>
-                    <p>Nesta seção terá o front-end dos meus projetos CLI (calculadora e jogo) adaptados para a web,
-                        demonstrando minha evolução.</p>
-                    <p> Confira também os bastidores do meu homelab: <a href="https://blog.luishomelab.tec.br" target="_blank"
-                            rel="noopener noreferrer">Homelab</a>.
+                    <p> Confira também os bastidores do meu homelab: <a href="https://blog.luishomelab.tec.br"
+                            target="_blank" rel="noopener noreferrer">Homelab</a>.
                     </p>
                 </article>
 
                 <article class="project-card" id="calculadora">
-                    <h3>Projeto 2: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Calculadora.js"
-                            target="_blank" rel="noopener noreferrer">Calculadora</a></h3>
+                    <h3>Projeto 2: Calculadora</h3>
                     <p>Desenvolvi uma calculadora simples em JavaScript para praticar lógica de programação.
                         Suporta operações básicas como adição, subtração, multiplicação e divisão.</p>
+                    <p>A lógica e o código CLI estão<a
+                            href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Calculadora.js"
+                            target="_blank" rel="noopener noreferrer">aqui</a>, mas o front-end está disponível nesta
+                        página. Clique no botão abaixo para testar.</p>
+                    <button class="ver-mais" data-project="calculadora">+</button>
                 </article>
 
                 <article class="project-card" id="adivinhacao">
-                    <h3> Projeto 3: <a href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Adivinhacao.js"
-                            target="_blank" rel="noopener noreferrer">Jogo da Adivinhação</a></h3>
-                    <p>Um jogo clássico onde o usuário tenta adivinhar um número entre 1 e 10 com limite de tentativas. Desenvolvido para exercitar condicionais e loops.</p>
+                    <h3> Projeto 3: Jogo da Adivinhação</h3>
+                    <p>Um jogo clássico onde o usuário tenta adivinhar um número entre 1 e 10 com limite de tentativas.
+                        Desenvolvido para exercitar condicionais e loops.</p>
+                    <p>A lógica e o código CLI estão <a
+                            href="https://github.com/LuisDavidMSilva/fase1-base/blob/main/cli/Adivinhacao.js"
+                            target="_blank" rel="noopener noreferrer">aqui</a>, mas o front-end está disponível nesta
+                        página. Clique no botão abaixo para testar.</p>
+                    <button class="ver-mais" data-project="adivinhacao">+</button>
                 </article>
 
                 <article class="project-card" id="taskboard">
-                    <h3> Projeto 4: <a href="https://luisdavidmsilva.github.io/taskboard/" target="_blank"
-                            rel="noopener noreferrer">Taskboard</a></h3>
-                    <p>Organizador de tarefas diárias feito com <strong>Vite e React</strong>. Permite criar, gerenciar e mover tarefas entre status.</p>
+                    <h3> Projeto 4: Taskboard</h3>
+                    <p>Organizador de tarefas diárias feito com <strong>Vite e React</strong>. Permite criar, gerenciar
+                        e mover tarefas entre status.</p>
+                    <p>O código fonte está disponível <a href="https://github.com/LuisDavidMSilva/taskboard"
+                            target="_blank" rel="noopener noreferrer">aqui</a> e o projeto pode ser visto <a
+                            href="https://luisdavidmsilva.github.io/taskboard/" target="_blank"
+                            rel="noopener noreferrer">aqui</a>.</p>
                 </article>
 
                 <article class="project-card" id="provr">
-                    <h3> Projeto 5: <a href="https://github.com/LuisDavidMSilva/provr" target="_blank"
-                            rel="noopener noreferrer">Provr</a></h3>
-                    <p>Plataforma web de testes (em desenvolvimento). Possibilita a criação de contas, upload de bancos de questões e acompanhamento de desempenho.</p>
+                    <h3> Projeto 5: Provr</h3>
+                    <p>Plataforma web de testes (em desenvolvimento). Possibilita a criação de contas, upload de bancos
+                        de questões e acompanhamento de desempenho.</p>
+                    <p>O código fonte está disponível <a href="https://github.com/LuisDavidMSilva/provr">aqui</a> e
+                        projeto pode ser acessado <a href="https://provr.luishomelab.tec.br" target="_blank"
+                            rel="noopener noreferrer">aqui</a>.</p>
+
                 </article>
             </div>
         </section>
@@ -96,6 +113,19 @@
             </ul>
         </section>
     </footer>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header"
+                style="padding: 1.5rem; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border);">
+                <h3 id="modal-title">Projeto</h3>
+                <button id="close-modal"
+                    style="background:none; border:none; color:white; cursor:pointer; font-size: 1.5rem;">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body" style="padding: 2rem;">
+            </div>
+        </div>
+    </div>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
