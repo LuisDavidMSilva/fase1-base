@@ -103,3 +103,30 @@ function openCalculadora() {
 }
 
 document.querySelector('[data-project="calculadora"]').onclick = openCalculadora;
+
+document.querySelectorAll('button[data-cert="true"]').forEach(btn => {
+    btn.onclick = () => {
+        const card = btn.closest('.certificado-card');
+        const img = card.querySelector('img');
+        const iframe = card.querySelector('iframe');
+        const title = card.querySelector('h3').textContent;
+        const pdfSrc = btn.getAttribute('data-pdf');
+
+        let contentHtml = '';
+        if (pdfSrc) {
+            contentHtml = `<iframe src="${pdfSrc}" style="width: 100%; height: 75vh; border: none; border-radius: 10px;"></iframe>`;
+        } else if (img) {
+            contentHtml = `<img src="${img.src}" alt="${title}" style="width: 100%; border-radius: 10px; max-height: 75vh; object-fit: contain;">`;
+        } else if (iframe) {
+            contentHtml = `<iframe src="${iframe.src}" style="width: 100%; height: 75vh; border: none; border-radius: 10px;"></iframe>`;
+        }
+
+        document.getElementById('modal-body').innerHTML = contentHtml;
+        document.getElementById('modal-overlay').classList.add('active');
+        document.getElementById('modal-title').textContent = title;
+
+        document.getElementById('close-modal').onclick = () => {
+            document.getElementById('modal-overlay').classList.remove('active');
+        };
+    };
+});
